@@ -12,3 +12,9 @@ Code Review
 - datele de intrare NU sunt validate
 
 
+2. Single Responsability și KISS pentru funcții
+- metoda calculează prea multe valori intermediare
+- se repetă o parte din prelucrări
+
+
+
