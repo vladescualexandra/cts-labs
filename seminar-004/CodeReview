@@ -1,0 +1,22 @@
+Code Review
+
+1. Convenții de nume + valori hard-codate (magic numbers):
+- numele clasei nu este ok, nu sugerează scopul clasei.
+- numele funcției nu este ok, nu sugerează scopul funcției.
+- numele argumentelor funcției nu sunt ok, nu sugerează nimic.
+- variabila rezultat trebuie redenumită
+- variabila valoare trebuie redenumită
+- numele pachetului
+
+- elimină valorile predefinite din funcție
+- datele de intrare NU sunt validate
+
+
+2. Single Responsability și KISS pentru funcții
+- metoda calculează prea multe valori intermediare
+- se repetă o parte din prelucrări
+
+3. SOLID
+- eliminare switch prin tratarea primului caz (NEW) in mod generic
+- eliminare dependente legate de validarea datelor & prelucrarea discount-ului
+
