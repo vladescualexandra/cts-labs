@@ -1,4 +1,4 @@
-package ro.ase.csie.cts.laborator.singleton;
+package ro.ase.csie.cts.laborator.singleton.ref_dinamic;
 
 public class ModulUI {
 
