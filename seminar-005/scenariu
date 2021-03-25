@@ -1,5 +1,6 @@
 Pentru dezvoltarea unui joc online (cu supereroi) sa se dezvolte o solutie software care sa permita
 
+SINGLETON
 1. Gestiunea eficienta a conexiunii la Baza de Date
 - diferitele module ale clientului trebuie sa foloseasca
  o singura conexiune
@@ -8,3 +9,12 @@ nu trebuie (nu pot) sa construiasca mai multe obiecte
 asociate conexiunii la baza de date
 - clientul trebuie sa foloseasca un unic obiect care sa
 ii permita conexiunea la baza de date
+
+PROTOTYPE
+2. Toate caracterele au asociat un model grafic 3D
+- in joc pot aparea mai multe instante
+ale aceluiasi caracter
+- crearea modelului 3D este un proces costisitor
+deoarece presupune incarcarea si generarea modelului
+- trebuie gasita o solutie eficienta pentru
+a crea mai multe instante ale aceluiasi caracter
