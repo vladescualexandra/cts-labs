@@ -10,3 +10,7 @@ FACADE
 - API-ul contine multe clase cu multe detalii
 - nu toate clasele sunt documentate
 - API-ul trebuie sa ofere o interfata simplificata pentru un set de functii de baza
+
+ADAPTER
+3. Utilizarea unei librarii externe ce contine caractere Electronic Arts.
+- in prezent jocul contine caractere proprii ce fac parte din framework-ul ACME (CaracterJoc)
