@@ -9,7 +9,7 @@ Laboratories for Software Quality and Testing (CTS) in 2021
 - [x] seminar-005: Singleton. Prototype.
 - [ ] seminar-006: Builder. Factory.
 - [ ] seminar-007: Factory Method. Facade. Adapter.
-- [ ] seminar-008: TBD
+- [ ] seminar-008: Decorator. Composite.
 - [ ] seminar-009: TBD
 - [ ] seminar-010: TBD
 - [ ] seminar-011: TBD
