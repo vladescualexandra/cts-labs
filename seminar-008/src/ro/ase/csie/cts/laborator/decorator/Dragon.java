@@ -7,6 +7,11 @@ public class Dragon extends SuperErou {
     }
 
     @Override
+    public int getPuncteViata() {
+        return this.puncteViata;
+    }
+
+    @Override
     public void alearga() {
         System.out.println(String.format("%s zboara catre o noua destinatie.", this.nume));
     }
