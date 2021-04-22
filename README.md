@@ -7,10 +7,10 @@ Laboratories for Software Quality and Testing (CTS) in 2021
 - [x] seminar-003: Clean Code. Refactoring.
 - [x] seminar-004: Clean Code. Refactoring.
 - [x] seminar-005: Singleton. Prototype.
-- [ ] seminar-006: Builder. Factory.
-- [ ] seminar-007: Factory Method. Facade. Adapter.
-- [ ] seminar-008: Decorator. Composite.
-- [ ] seminar-009: TBD
+- [x] seminar-006: Builder. Factory.
+- [x] seminar-007: Factory Method. Facade. Adapter.
+- [x] seminar-008: Decorator. Composite.
+- [x] seminar-009: Flyweight. Proxy.
 - [ ] seminar-010: TBD
 - [ ] seminar-011: TBD
 - [ ] seminar-012: TBD
