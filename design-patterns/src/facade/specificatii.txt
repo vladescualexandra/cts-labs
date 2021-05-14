@@ -1,0 +1,17 @@
+FACADE
+- Model Structural
+- Simplifică interfața unui modul/subsitem
+Problemă:
+- Soluția conține o mulțime de clase iar execuția unei funcții presupune apeluri multiple
+de metode aflate în aceste clase.
+- Clasele nu se modifică însă se construiește un layer intermediar ce permite
+apelul/gestiunea facilă a metodelor din mai multe interfețe.
+- Utilă în situația în care framework-ul crește în complexitate și nu este posibilă
+rescrierea lui pentru simplificare.
+- Apelurile către multiplele interfețe sunt mascate de această interfață comună.
+
+Scenariu:
+Pentru a permite altor companii sau jucatorilor sa dezvolte solutii externe care sa se conecteze la joc trebuie dezvoltata o librarie (un API)
+- API-ul contine multe clase cu multe detalii
+- nu toate clasele sunt documentate
+- API-ul trebuie sa ofere o interfata simplificata pentru un set de functii de baza

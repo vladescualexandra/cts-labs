@@ -1,0 +1,18 @@
+PROTOTYPE
+- Model Creațional
+- Pattern pentru clonarea unor noi instanțe (clone) ale unui prototip existent.
+Problemă:
+- Soluția generează obiecte costisitoare (timp creare
+si memorie ocupata) cu durata de viată lungă
+- Pentru eficienta, Soluția reutilizează obiectul prin
+clonarea acestuia (se creează o instant noua a obiectului)
+- Implementat printr-o metoda clone()
+
+Scenariu:
+Toate caracterele au asociat un model grafic 3D
+- in joc pot aparea mai multe instante
+ale aceluiasi caracter
+- crearea modelului 3D este un proces costisitor
+deoarece presupune incarcarea si generarea modelului
+- trebuie gasita o solutie eficienta pentru
+a crea mai multe instante ale aceluiasi caracter

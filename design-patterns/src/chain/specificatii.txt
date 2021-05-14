@@ -1,0 +1,15 @@
+CHAIN OF RESPONSABILITY
+- MODEL COMPORTAMENTAL
+- Gestionează tratarea unui eveniment de către mai mulți furnizori de soluții
+Problemă:
+- Tratarea unui eveniment sau a unui obiect se face diferit în funcție de starea acestuia
+- Gestiunea tuturor cazurilor ar implica o structură complexă care să verifice toate
+cazurile particulare
+- Există legăruri de dependență între cazurile de urilizare: execuția unui caz poate
+implica ignorarea celorlalte sau tratarea următorului caz
+
+Scenariu:
+Jocul are un chat intern
+- vrem sa filtram comentariile / mesajele care nu sunt potrivite
+- mesajele destinate unui anumit player vor fi private
+- difuzare mesaje destinate tuturor

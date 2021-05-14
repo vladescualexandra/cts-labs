@@ -1,0 +1,13 @@
+COMPOSITE
+- Model Structural
+- Agregarea ierarhică a mai multor obiecte similare.
+Problemă:
+- Soluția conține o mulțime de clase aflate in relație
+ierarhică ce trebuie tratate unitar.
+- Se construiesc structuri arborescente în care nodurile
+intermediare și cele frunză sunt tratate unitar.
+
+Scenariu:
+Pentru a gestiona o structura IERARHICA de caractere (de ex o armata sau un grup de jucatori)
+- sa se gaseasca o solutie eficienta care sa permita gruparea jucatorilor
+- un grup poate contine caractere controlate de jucatori sau alte grupuri

@@ -1,0 +1,15 @@
+ADAPTER
+- Model Structural
+- Adaptează interfața unui server/serviciu la client.
+Problemă:
+- Utilizarea împreună a unor clase ce nu au o interfață comună.
+- Clasele NU SE MODIFICĂ însă se construiește o interfață
+ce permite utilizarea lor în alt context.
+- Clasele sunt adaptate la un nou context.
+- Apelurile către interfața clasei sunt mascate de
+interfața adaptorului.
+- Transformarea datelor dintr-un format în altul.
+
+Scenariu:
+Utilizarea unei librarii externe ce contine caractere Electronic Arts.
+- in prezent jocul contine caractere proprii ce fac parte din framework-ul ACME (CaracterJoc)

@@ -1,0 +1,20 @@
+FLYWEIGHT
+- MODEL STRUCTURAL
+- Partajează memorie între obiecte similare
+Problemă:
+- Soluția generează o mulțime de obiecte cu o structura internă complexă
+și care ocupă un volum mare de memorie
+- Obiectele au atribute comune însă o parte din starea lor variază; memoria
+ocupată de ele poate fi minimizată prin partajarea stării fixe între ele
+- Starea obiectelor poate fi gestionată prin structuri externe iar numărul
+de obiecte efectiv create poate fi minimizat
+- Utilizarea unui obiect înseamnă reîncărcarea stării lui variabile într-un obiect existent
+
+Scenariu:
+Pentru a gestiona eficient (din punct de vedere al memoriei) scenariile in care jucatorii interactioneaza cu
+mai multe caractere controlate de calculator
+- colectia de caractere coordonate de calculator contine elemente de acelasi fel (aceleasi modele 3D)
+- spatiul ocupat de un model 3D este semnificativ
+- generarea unui astfel de scenariu necesita un spatiu semnificativ de memorie pentru client
+- modelele 3D sunt afisate pe ecran la coordonate diferite si pot avea texturi de culori diferite
+- trebuie gasita o solutie eficienta privind gestiunea acestor situatii

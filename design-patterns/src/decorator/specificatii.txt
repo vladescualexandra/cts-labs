@@ -1,0 +1,17 @@
+DECORATOR
+- Model Structural
+- Extinde în mod transparent un obiect la run-time
+Problemă:
+- Extinderea (decorarea) statică sau la run-time a funcționalității sau stării
+unor obiecte, independent de alte instanțe ale aceleiași clase
+- Obiectul poate să fie extins prin aplicarea mai multor decoratori
+- Clasa existeentă nu trebuie să fie modificată
+- Utilizarea unor abordări tradiționale, prin derivarea clasei,
+duce la ierarhii complexe ce sunt greu de gestionat. Derivarea adaugă comportament nou
+doar la compilare
+
+Scenariu:
+Modificarea în timpul jocului a caracteristicilor unor super-eroi
+- În timpul jocului super-eroii pot fi dotați cu echipamente noi
+- Comportamentul super-eroului se poate modifica dinamic în funcție
+de interacțiunea cu celelalte caractere din joc

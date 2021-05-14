@@ -1,0 +1,21 @@
+BUILDER
+- Model Creațional
+- Pattern pentru crearea în mod structurat (incremental) de obiecte complexe.
+Problemă:
+- Soluția trebuie să construiască obiecte complexe printr-un
+mecanism care este independent de procesul de realizare a obiectelor.
+- Clientul construieștte obiecte complexe specificând doar
+tipul și valoarea sa, fără a cunoaște detaliile interne
+ale obiectulului.
+- Procesul de construire a obiectelor trebuie să poată fi
+utilizat pentru a defini obiecte diferite din aceeași familie.
+- Obiectele sunt gestionate prin interfața comuna
+- Instanța de tip Builder construiește obiectul însă
+  tipul acestuia este definit de subclase
+
+Scenariu:
+Instantierea supereroului asociat jucatorului
+- acesta are multe atribute pentru a permite particularizarea sa
+- nume, estePozitiv, puncteViata, armaManaStanga, armaManaDreapta, superPutere, esteRanitCritic, superSuperPutere, etc
+- trebuie gasita o solutie eficienta care sa permita crearea supereroului fara a da valori pentru toate atributele
+dar si fara a permite programatorilor sa omita unele dintre ele

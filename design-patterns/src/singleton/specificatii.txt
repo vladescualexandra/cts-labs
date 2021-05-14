@@ -1,0 +1,22 @@
+SINGLETON
+- Model Creațional
+- Pattern pentru crearea unei instanțe unice.
+Problemă:
+- Se dorește crearea unei singure instanțe pentru o clasă prin care să
+fie gestionată o resursă/un eveniment în mod centralizat;
+- Soluția se bazează pe existența unei singure instanțe ce poate fi
+creata o singură dată dar care poate fi referită de mai multe ori;
+- Asigură un singur punct de acces, vizibil global, la unica instanță
+- Exemple: gestiune conexiune baze de date sau alte resurse;
+mecanism de logging unic; manager evenimente; manager resurse
+vizuale; manager configurare.
+
+Scenariu:
+Gestiunea eficienta a conexiunii la Baza de Date
+- diferitele module ale clientului trebuie sa foloseasca
+ o singura conexiune
+- programatorii care implementeaza modulele respective
+nu trebuie (nu pot) sa construiasca mai multe obiecte
+asociate conexiunii la baza de date
+- clientul trebuie sa foloseasca un unic obiect care sa
+ii permita conexiunea la baza de date

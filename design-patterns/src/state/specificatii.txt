@@ -1,0 +1,17 @@
+STATE
+- Model Comportamental
+- Gestionează obiecte al căror comportament depinde de starea lor.
+Problemă:
+- Aplicația tratează un anumit eveniment diferit în
+funcție de starea unui obiect
+- Numărul de stări posibile poate să crească și
+tratarea unitară a acestora poate să influențeze
+complexitatea soluției
+- Modul de tratare a acțiunii este asociat unei
+anumite stări și este încapsulat într-un obiect de
+stare
+
+Scenariu:
+Comportamentul caracterul este influentat de stare lui
+- daca acesta este ranit miscarile sunt afectate
+- daca este afectat de actiunile magice ale celorlalte caractere, actiunile acestuia (modul in care ataca, se apara) sunt afectate

@@ -1,0 +1,22 @@
+STRATEGY
+- Model Comportamental
+- Încapsulează diferiți algoritmi.
+Problemă:
+- Alegerea la run-time a algoritmului/funcției
+care sa fie utilizata pentru procesarea unor
+date;
+- Algoritmul se poate alege pe baza unor
+condiții descrise la execuție in funcție de
+contextul datelor de intrare
+- Clasa existenta nu trebuie sa fie modificata
+- Utilizarea unei abordări tradiționale, prin
+includerea in clasa a tuturor metodelor
+posibile, duce la ierarhii complexe ce sunt greu
+de gestionat. Derivarea adaugă comportament
+nou doar la compilare
+
+Scenariu:
+In functie de implicarea in joc (timp petrecut, activitate in timpul jocului, etc) jucatorii primesc puncte bonus.
+Aceasta strategie este stabilita de departamentul de marketing si se modifica in functie de alte campanii, perioada anului, etc.
+Sa se gaseasca o solutie care sa permita:
+- modificarea strategiei de acordare a bonusului la runtime fara a modifica implementarea jocului
