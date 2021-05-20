@@ -13,7 +13,7 @@ Laboratories for Software Quality and Testing (CTS) in 2021
 - [x] seminar-009: Flyweight. Proxy.
 - [x] seminar-010: Strategy. State. 
 - [x] seminar-011: Chain. Command.
-- [ ] seminar-012: TBD
+- [x] seminar-012: Observer. Memento. Intro JUnit.
 - [ ] seminar-013: TBD
 - [ ] seminar-014: TBD
 
