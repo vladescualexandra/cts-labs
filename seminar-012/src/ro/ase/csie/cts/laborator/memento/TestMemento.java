@@ -15,6 +15,5 @@ public class TestMemento {
 
         superman.incarcaSalvare(managerIstoric.getUltimaSalvare());
         System.out.println("Puncte viata: " + superman.puncteViata);
-
     }
 }

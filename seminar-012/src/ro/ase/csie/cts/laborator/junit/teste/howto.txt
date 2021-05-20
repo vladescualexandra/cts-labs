@@ -1,0 +1,5 @@
+- Generate pe clasa model
+- Test
+- Selectare JUnit4
+- Selectare path
+- Bifare: SetUp/Before și tearDown/After
