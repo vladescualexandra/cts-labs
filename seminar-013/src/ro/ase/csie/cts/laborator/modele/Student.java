@@ -8,85 +8,91 @@ import java.util.ArrayList;
 
 
 public class Student {
-	
-	public static final int MIN_VARSTA = 14;
-	public static final int MAX_VARSTA = 90;
-	public static final int MIN_NOTA = 1;
-	public static final int MAX_NOTA = 10;
-	public static final int MIN_LUNGIME_NUME = 3;
-	public static final int MAX_LUNGIME_NUME = 255;
-	
-	protected String nume;
-	protected int varsta;
-	protected ArrayList<Integer> note;
-	
-	
-	public Student(String nume, int varsta, ArrayList<Integer> note) {
-		super();
-		this.nume = nume;
-		this.varsta = varsta;
-		this.note = note;
-	}
+
+    public static final int MIN_VARSTA = 14;
+    public static final int MAX_VARSTA = 90;
+    public static final int MIN_NOTA = 1;
+    public static final int MAX_NOTA = 10;
+    public static final int MIN_LUNGIME_NUME = 3;
+    public static final int MAX_LUNGIME_NUME = 255;
+
+    protected String nume;
+    protected int varsta;
+    protected ArrayList<Integer> note;
 
 
-	public String getNume() {
-		return nume;
-	}
+    public Student(String nume, int varsta, ArrayList<Integer> note) {
+        super();
+        this.nume = nume;
+        this.varsta = varsta;
+        this.note = note;
+    }
 
 
-	public void setNume(String nume) throws ExceptieNume {
-		if (nume.length() <MIN_LUNGIME_NUME) {
-			throw new ExceptieNume();
-		}
-		this.nume = nume;
-	}
+    public String getNume() {
+        return nume;
+    }
 
 
-	public int getVarsta() {
-		return varsta;
-	}
+    public void setNume(String nume) throws ExceptieNume {
+        if (nume.length() < MIN_LUNGIME_NUME) {
+            throw new ExceptieNume();
+        }
+        this.nume = nume;
+    }
 
 
-	public void setVarsta(int varsta) throws ExceptieVarsta {
-		if (varsta < MIN_VARSTA) {
-			throw new ExceptieVarsta();
-		}
-		this.varsta = varsta;
-	}
+    public int getVarsta() {
+        return varsta;
+    }
 
 
-	public void setNote(ArrayList<Integer> note) throws ExceptieNota {
-		this.note = note;
-	}
-	
-	
-	public int getNota(int index) {
-		return this.note.get(index);
-	}
-	
-	public int getNrNote() {
-		return this.note.size();
-	}
-	
+    public void setVarsta(int varsta) throws ExceptieVarsta {
+        if (varsta < MIN_VARSTA) {
+            throw new ExceptieVarsta();
+        }
+        this.varsta = varsta;
+    }
 
-	public float getMedie() {
-		int sum = 0;
-		for(int grade : this.note) {
-			sum += grade;
-		}
-		return sum/this.note.size();
-		
-	}
+
+    public void setNote(ArrayList<Integer> note) throws ExceptieNota {
+        this.note = note;
+    }
+
+
+    public int getNota(int index) {
+        return this.note.get(index);
+    }
+
+    public int getNrNote() {
+        return this.note.size();
+    }
+
+
+    public float getMedie() {
+        int sum = 0;
+        for (int grade : this.note) {
+            sum += grade;
+        }
+        return sum / this.note.size();
+
+    }
 
     public int getNotaMinima() {
-        int min = 0;
-        for(int nota : this.note) {
-			if(min > nota) {
+        if (this.note == null) {
+            return 0;
+        }
+        if (this.note.size() == 0) {
+            return 0;
+        }
+        int min = this.note.get(0);
+        for (int nota : this.note) {
+            if (min > nota) {
                 min = nota;
             }
-		}
+        }
         return min;
     }
-	
-	
+
+
 }

@@ -1,6 +1,7 @@
 package ro.ase.csie.cts.laborator.teste;
 
 import org.junit.*;
+import ro.ase.csie.cts.laborator.exceptii.ExceptieNota;
 import ro.ase.csie.cts.laborator.exceptii.ExceptieNume;
 import ro.ase.csie.cts.laborator.exceptii.ExceptieVarsta;
 import ro.ase.csie.cts.laborator.modele.Student;
@@ -9,7 +10,7 @@ import java.util.ArrayList;
 
 import static org.junit.Assert.*;
 
-public class StudentTest {
+public class TestStudent {
 
     private static final String NUME_INITIAL = "Gigel";
     private static final int VARSTA_INITIALA = 21;
@@ -84,5 +85,52 @@ public class StudentTest {
         student.setNume(numeNou);
     }
 
+    @Test
+    public void testGetNotaMinimaOrderingSetSortatCrescator() throws ExceptieNota {
+        int notaMinima = 4;
+        ArrayList<Integer> note = new ArrayList<>();
+        for (int i = 0; i < 5; i++) {
+            note.add(i + notaMinima);
+        }
+
+        student.setNote(note);
+
+        int notaMinimaCalculata = student.getNotaMinima();
+        assertEquals("Test cu valori sortate crescator.", notaMinima, notaMinimaCalculata);
+
+    }
+
+    @Test
+    public void testGetNotaMinimaCardinalityZero() throws ExceptieNota {
+        ArrayList<Integer> note = new ArrayList<>();
+        student.setNote(note);
+
+        int notaMinima = 0;
+        int notaMinimaCalculata = student.getNotaMinima();
+
+        assertEquals("Test fara note.", notaMinima, notaMinimaCalculata);
+
+    }
+
+    @Test
+    public void testGetNotaMinimaCardinalityUnu() throws ExceptieNota {
+        ArrayList<Integer> note = new ArrayList<>();
+        note.add(Student.MAX_NOTA);
+
+        student.setNote(note);
+
+        int notaMinima = Student.MAX_NOTA;
+        int notaMinimaCalculata = student.getNotaMinima();
+        assertEquals("Test cu o singura nota.", notaMinima, notaMinimaCalculata);
+
+    }
+
+    @Test
+    public void testGetNotaMinimaExistenceNoteNull() throws ExceptieNota {
+        student.setNote(null);
+        int notaMinima = 0;
+        int notaMinimaCalculata = student.getNotaMinima();
+        assertEquals("Test cu vector null.", notaMinima, notaMinimaCalculata);
+    }
 
 }
