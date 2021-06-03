@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/cts-labs.iml" filepath="$PROJECT_DIR$/.idea/cts-labs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/design-patterns/design-patterns.iml" filepath="$PROJECT_DIR$/design-patterns/design-patterns.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seminar-001/seminar-001.iml" filepath="$PROJECT_DIR$/seminar-001/seminar-001.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seminar-002/seminar-002.iml" filepath="$PROJECT_DIR$/seminar-002/seminar-002.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seminar-003/seminar-003.iml" filepath="$PROJECT_DIR$/seminar-003/seminar-003.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seminar-004/seminar-004.iml" filepath="$PROJECT_DIR$/seminar-004/seminar-004.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seminar-005/seminar-005.iml" filepath="$PROJECT_DIR$/seminar-005/seminar-005.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seminar-006/seminar-006.iml" filepath="$PROJECT_DIR$/seminar-006/seminar-006.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seminar-007/seminar-007.iml" filepath="$PROJECT_DIR$/seminar-007/seminar-007.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seminar-008/seminar-008.iml" filepath="$PROJECT_DIR$/seminar-008/seminar-008.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seminar-009/seminar-009.iml" filepath="$PROJECT_DIR$/seminar-009/seminar-009.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seminar-010/seminar-010.iml" filepath="$PROJECT_DIR$/seminar-010/seminar-010.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seminar-011/seminar-011.iml" filepath="$PROJECT_DIR$/seminar-011/seminar-011.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seminar-012/seminar-012.iml" filepath="$PROJECT_DIR$/seminar-012/seminar-012.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seminar-013/seminar-013.iml" filepath="$PROJECT_DIR$/seminar-013/seminar-013.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seminar-014/seminar-014.iml" filepath="$PROJECT_DIR$/seminar-014/seminar-014.iml" />
+    </modules>
+  </component>
+</project>

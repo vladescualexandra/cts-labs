@@ -1,0 +1,14 @@
+MEMENTO
+- Model comportamental
+- Salvazeaza si restaureaza starea unui obiect
+Problemă:
+- Aplicația trebuie sa permită salvarea stării unui
+obiect
+- Imaginile stării obiectului pentru diferite
+momente sunt gestionate separat
+- Obiectul își poate restaura starea pe baza unei
+imagini anterioare
+
+Scenariu:
+Jucatorii au posibilitatea sa salveze starea jocului/caracterului si sa o restaureze mai tarziu
+- jucatorul poate relua jocul dintr-un anumit punct
