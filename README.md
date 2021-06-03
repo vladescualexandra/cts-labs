@@ -14,8 +14,8 @@ Laboratories for Software Quality and Testing (CTS) in 2021
 - [x] seminar-010: Strategy. State. 
 - [x] seminar-011: Chain. Command.
 - [x] seminar-012: Observer. Memento. Intro JUnit.
-- [ ] seminar-013: TBD
-- [ ] seminar-014: TBD
+- [x] seminar-013: JUnit
+- [x] seminar-014: JUnit
 
 ## Design Patterns
 ### Creational Design Patterns;
@@ -36,3 +36,24 @@ Laboratories for Software Quality and Testing (CTS) in 2021
 * Command: Request or Action is first-class object, hence restorable.
 * State: Gestionează obiecte al căror comportament depinde de starea lor.
 * Strategy: Încapsulează diferiți algoritmi.
+
+
+## JUnit
+### CORRECT 
+* Conformance – Valoarea are formatul corect ?
+* Ordering – Setul de valori trebuie să fie ordonat sau nu ?
+* Range – este valoarea între limitele (maxim și minim) acceptate?
+* Reference – Codul referă componente externe care NU sunt
+controlate direct?
+* Existence – Valoarea există (ex. este non-null, non-zero, parte dintrun set, etc.)?
+* Cardinality – Setul de test conține suficiente valori (regula 0-1-n) ?
+* Time (absolut și relativ) – Totul se întâmplă în ordine ? La momentul
+potrivit ? Într-un timp finit ? (UTC vs. DST)
+### The Right-BICEP
+* Right . Sunt rezultatele corecte ?
+* B . Sunt limitele (Boundary conditions) definite CORRECT?
+* I . Poți verifica opusul situației (Inverse relationships)?
+* C . Se poate verifica rezultatul si prin alte metode (Cross-check)?
+* E . Se pot evalua (forța) condițiile care generează erori (Errorconditions)?
+* P . Performanta execuției este intre limite (Performance
+characteristics) ?
