@@ -1,13 +1,12 @@
 package ro.ase.csie.cts.laborator.teste;
 
 import org.junit.*;
+import org.junit.experimental.categories.Category;
 import ro.ase.csie.cts.laborator.exceptii.ExceptieNota;
 import ro.ase.csie.cts.laborator.exceptii.ExceptieVarsta;
 import ro.ase.csie.cts.laborator.modele.Student;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 import static org.junit.Assert.*;
 
@@ -18,10 +17,17 @@ public class TestStudentPart2 {
     // Text fixture - date de care ai nevoie pentru test.
     private static Student student;
     private static ArrayList<Integer> note;
+    private static ArrayList<Integer> noteRandom = new ArrayList<>();
 
     @BeforeClass
     public static void setUpBeforeClass() {
         note = new ArrayList<>(Arrays.asList(7, 4, 6));
+
+        int nrNote = (int) 1e6;
+        Random random = new Random();
+        for (int i = 0; i < nrNote; i++) {
+            noteRandom.add(random.nextInt(Student.MAX_NOTA) + 1);
+        }
     }
 
     @AfterClass
@@ -82,6 +88,79 @@ public class TestStudentPart2 {
         assertArrayEquals("Test shallow copy pe setNote", noteStudent, noteExistente);
     }
 
+    @Category({CategoryTestPerformanta.class, CategoryTesteImportante.class})
+    @Test
+    public void testGetMediePerformance() throws ExceptieNota {
+        student.setNote(noteRandom);
 
+        long tStart = System.currentTimeMillis();
+        student.getMedie();
+        long tFinal = System.currentTimeMillis();
+
+        long durata = tFinal - tStart;
+        if (durata <= 20) {
+            assertTrue(true);
+        } else {
+            fail("Calculul mediei dureaza mai mult de 10 milisecunde.");
+        }
+
+    }
+
+    @Category(CategoryTestPerformanta.class)
+    @Test(timeout = 30)
+    public void testGetMediePerformanceTimeout() throws ExceptieNota {
+        student.setNote(noteRandom);
+        student.getMedie();
+    }
+
+    @Category(CategoryTesteImportante.class)
+    @Test
+    public void testSetVarstaInverse() throws ExceptieVarsta {
+        int varstaNoua = VARSTA_INITIALA + 1;
+        student.setVarsta(varstaNoua);
+
+        assertNotEquals("set nu modifica valoarea atributului",
+                VARSTA_INITIALA, student.getVarsta());
+
+    }
+
+    @Category(CategoryTesteImportante.class)
+    @Test
+    public void testGetNotaMinima() throws ExceptieNota {
+        ArrayList<Integer> note = new ArrayList<>();
+        for (int i = 0; i < 3; i++) {
+            note.add(new Random().nextInt(Student.MAX_NOTA) + 1);
+        }
+
+        student.setNote(note);
+
+        int notaMinima = student.getNotaMinima();
+
+        for (int i = 0; i < student.getNrNote(); i++) {
+            if (notaMinima > student.getNota(i)) {
+                fail("Minimul nu este calculat corect.");
+            }
+        }
+
+        assertTrue(true);
+    }
+
+    @Category(CategoryTesteImportante.class)
+    @Test
+    public void testGetNotaMinimaCross() throws ExceptieNota {
+        ArrayList<Integer> note = new ArrayList<>();
+        for (int i = 0; i < 3; i++) {
+            note.add(new Random().nextInt(Student.MAX_NOTA) + 1);
+        }
+
+        student.setNote(note);
+
+        int notaMinima = Collections.min(note);
+        int notaminimaCalculata = student.getNotaMinima();
+
+        assertEquals("Nota minima nu este ok", notaMinima, notaminimaCalculata);
+
+
+    }
 
 }
